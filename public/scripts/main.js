@@ -17,7 +17,7 @@ checkButtons.forEach(button => {
         const form = document.querySelector(".modal form")
         const questionId = event.target.dataset.id
 
-        form.setAttribute("action", `/room/${roomId}/${questionId}/check`)
+        form.setAttribute("action", `/question/${roomId}/${questionId}/check`)
 
         modalTitle.innerHTML = "Marcar como lida"
         modalDescription.innerHTML = "Tem certeza que desja marcar como lida esta pergunta?"
@@ -39,7 +39,7 @@ deleteButton.forEach(button => {
         const form = document.querySelector(".modal form")
         const questionId = event.target.dataset.id
 
-        form.setAttribute("action", `/room/${roomId}/${questionId}/delete`)
+        form.setAttribute("action", `/question/${roomId}/${questionId}/delete`)
 
         modalTitle.innerHTML = "Excluir pergunta"
         modalDescription.innerHTML = "Tem Certeza que você deseja Excluir esta pergunta ?"
